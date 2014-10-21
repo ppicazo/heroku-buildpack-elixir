@@ -21,7 +21,7 @@ function install_elixir() {
 
   mkdir -p $(elixir_path)
   cd $(elixir_path)
-  jar xf ${cache_path}/$(elixir_download_file)
+  unzip ${cache_path}/$(elixir_download_file)
   cd - > /dev/null
 
   chmod +x $(elixir_path)/bin/*
